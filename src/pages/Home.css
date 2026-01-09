@@ -1,0 +1,68 @@
+.home {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #1a102b; /* dark purple */
+  color: #a78bfa;
+  min-height: 100vh;
+}
+
+.home h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.home p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.home-btn {
+  background-color: #24143d;
+  color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.home-btn:hover {
+  background-color: #3b1f5b;
+  color: #a78bfa;
+}
+.typing {
+  width: fit-content;
+  font-size: 2.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #9b5de5; /* purple cursor */
+  animation:
+    typing 3.5s steps(30, end) infinite,
+    blink 0.8s step-end infinite;
+}
+
+/* typing effect */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* blinking cursor */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

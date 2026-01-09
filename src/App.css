@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a102b; /* dark purple background */
+  color: #e5e7eb; /* light text */
+}
+
+.header {
+  text-align: center;
+  padding: 40px;
+  background-color: #1a102b;
+  color: #a78bfa; /* soft purple headings */
+}
+
+.projects {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.project-card {
+  background-color: #24143d; /* darker purple card */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+h1, h2, h3 {
+  color: #a78bfa; /* soft purple headings */
+}
+body {
+  color: #ffffff;
+}

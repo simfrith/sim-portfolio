@@ -1,0 +1,43 @@
+.resume {
+  min-height: 100vh;
+  padding: 80px 20px;
+  background-color: #1a102b;
+  color: #ffffff;
+  text-align: center;
+}
+
+.resume h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.resume-actions {
+  margin-bottom: 30px;
+}
+
+.resume-btn {
+  background-color: #24143d;
+  color: #c4b5fd;
+  padding: 14px 26px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #3b1f5b;
+  color: #a78bfa;
+}
+
+.resume-viewer {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.resume-viewer iframe {
+  border: none;
+}

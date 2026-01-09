@@ -1,0 +1,31 @@
+.projects {
+  padding: 80px 20px;
+  background-color: #1a102b;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.projects h1 {
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 260px);
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Responsive fallback */
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 260px);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: repeat(1, 260px);
+  }
+}
