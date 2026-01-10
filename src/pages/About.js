@@ -1,4 +1,7 @@
 import React from "react";
+import ImageCarousel from "../components/ImageCarousel";
+import boomlift from "../boomlift.jpg";
+import tester from "../tester.jpeg";
 import "./About.css";
 
 function About() {
