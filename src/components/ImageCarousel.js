@@ -1,31 +1,22 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./ImageCarousel.css";
 
 function ImageCarousel({ images }) {
   const [current, setCurrent] = useState(0);
 
-  const prevSlide = () => {
-    setCurrent((current - 1 + images.length) % images.length);
-  };
-
-  const nextSlide = () => {
-    setCurrent((current + 1) % images.length);
-  };
+  const prevSlide = () =>
+    setCurrent(current === 0 ? images.length - 1 : current - 1);
+  const nextSlide = () =>
+    setCurrent(current === images.length - 1 ? 0 : current + 1);
 
   return (
     <div className="carousel">
-      <button className="carousel-arrow left" onClick={prevSlide}>
-        &#10094;
+      <button className="arrow left" onClick={prevSlide}>
+        &lt;
       </button>
-
-      <img
-        src={images[current]}
-        alt="About carousel"
-        className="carousel-image"
-      />
-
-      <button className="carousel-arrow right" onClick={nextSlide}>
-        &#10095;
+      <img src={images[current]} alt="carousel" className="carousel-img" />
+      <button className="arrow right" onClick={nextSlide}>
+        &gt;
       </button>
     </div>
   );

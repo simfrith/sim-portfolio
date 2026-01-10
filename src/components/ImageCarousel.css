@@ -1,43 +1,39 @@
 .carousel {
   position: relative;
-  width: 320px;
-  height: 320px;
-  margin: 0 auto 40px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  max-width: 600px;      /* adjust width as needed */
+  margin: 2rem auto;
 }
 
-.carousel-image {
+.carousel-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: opacity 0.3s ease-in-out;
+  height: 400px;          /* keeps all images same height */
+  object-fit: contain;     /* show entire image without cropping */
+  object-position: center; /* center the image inside the container */
+  border-radius: 12px;
+  background-color: #1a102b; /* optional: matches your site background */
 }
 
-/* ARROWS */
-.carousel-arrow {
+/* Arrows */
+.arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(26, 16, 43, 0.75);
+  background: rgba(0,0,0,0.5);
   color: white;
   border: none;
   font-size: 2rem;
-  padding: 8px 14px;
+  padding: 0.5rem 1rem;
   cursor: pointer;
   border-radius: 50%;
-  transition: background-color 0.25s ease;
 }
 
-.carousel-arrow:hover {
-  background-color: rgba(155, 93, 229, 0.85);
-}
-
-.carousel-arrow.left {
+.arrow.left {
   left: 10px;
 }
 
-.carousel-arrow.right {
+.arrow.right {
   right: 10px;
 }
+
+
+
