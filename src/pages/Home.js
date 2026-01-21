@@ -6,10 +6,18 @@ function Home() {
   return (
     <section className="home">
       <h1 className="typing">
-  Hello, I'm Simeon Frith IV!
-</h1>
+        Hello, I'm Simeon Frith IV!
+      </h1>
+
+      {/* Headshot */}
+      <img
+        src="/headshot.jpg"
+        alt="Simeon Frith IV headshot"
+        className="headshot"
+      />
 
       <p>Networking Student | Kennesaw State University</p>
+
       <div className="home-buttons">
         <Link to="/about" className="home-btn">About Me</Link>
         <Link to="/projects" className="home-btn">Projects</Link>
@@ -21,3 +29,4 @@ function Home() {
 }
 
 export default Home;
+
