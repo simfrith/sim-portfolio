@@ -1,3 +1,4 @@
+
 .projects {
   padding: 80px 20px;
   background-color: #1a102b;
@@ -5,27 +6,91 @@
   text-align: center;
 }
 
-.projects h1 {
+.projects h2 {
   color: #ffffff;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  font-size: 2rem;
 }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 260px);
-  justify-content: center;
-  gap: 30px;
+  display: flex;             /* horizontal layout */
+  justify-content: center;   /* center the cards */
+  align-items: flex-start;   /* align cards to top */
+  gap: 30px;                 /* space between cards */
+  flex-wrap: wrap;           /* allow wrapping on smaller screens */
+  width: 100%;
+  margin: 0 auto;
 }
 
-/* Responsive fallback */
+
+.project-card {
+  background-color: #24143d;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 260px;             /* fixed width */
+  height: 320px;            /* adjust height */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px) scale(1.03); /* subtle hover pop */
+  box-shadow: 0 16px 30px rgba(155, 93, 229, 0.4);
+}
+
+.project-card img {
+  width: 100%;
+  height: 140px;              /* taller for better balance */
+  object-fit: cover;           /* fill area without distortion */
+  object-position: center;     /* center image */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.project-card h3 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin: 12px 12px 6px;
+}
+
+.project-card p {
+  color: #e5e7eb;
+  font-size: 0.85rem;
+  margin: 0 12px;
+  line-height: 1.3;
+  flex-grow: 1;
+}
+
+.project-card a {
+  margin: 10px 12px 12px;
+  padding: 8px;
+  background-color: #9b5de5;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.25s ease;
+}
+
+.project-card a:hover {
+  background-color: #7c3aed;
+}
+
+/* ==========================
+   Responsive Breakpoints
+========================== */
 @media (max-width: 900px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 260px);
+  .project-card {
+    width: 45%;   /* two cards per row */
   }
 }
 
 @media (max-width: 600px) {
-  .projects-grid {
-    grid-template-columns: repeat(1, 260px);
+  .project-card {
+    width: 90%;   /* single card per row */
   }
 }

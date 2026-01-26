@@ -5,19 +5,28 @@ function Projects() {
     <section className="projects">
       <h2>Projects</h2>
 
-      <ProjectCard
-        title="Networking Homelab"
-        description="Built a multi-router Cisco homelab with VLANs and ACLs."
-        image="/images/HomeLab.jpg"
-        github="https://github.com/simfrith"
-      />
+      <div className="projects-grid">
+        <ProjectCard
+          title="Networking Homelab"
+          description="Built a multi-router Cisco homelab with VLANs and ACLs."
+          image="/images/HomeLab.jpg"
+          github="https://github.com/simfrith"
+        />
 
-      <ProjectCard
-        title="Portfolio Website"
-        description="Personal React portfolio deployed using Netlify."
-        image="/images/images.jpg"
-        github="https://github.com/simfrith"
-      />
+        <ProjectCard
+          title="Portfolio Website"
+          description="Personal React portfolio deployed using Netlify."
+          image="/images/images.jpg"
+          github="https://github.com/simfrith/sim-portfolio"
+        />
+
+        <ProjectCard
+          title="Python Automation"
+          description="Python automation using Netmiko."
+          image="/images/python-logo.png"
+          github="https://github.com/simfrith/network-automationx"
+        />
+      </div>
     </section>
   );
 }

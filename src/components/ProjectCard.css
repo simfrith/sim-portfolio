@@ -19,12 +19,14 @@
 }
 
 /* IMAGE */
-.project-card img {
+ .project-card img {
   width: 100%;
-  height: 120px;
+  height: 140px;       /* or whatever height you use */
   object-fit: cover;
-  object-position: top;
+  object-position: top; /* show more of the top of the image */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 
 /* CONTENT */
 .project-card h3 {
