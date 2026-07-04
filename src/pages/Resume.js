@@ -8,7 +8,7 @@ function Resume() {
 
       <div className="resume-actions">
         <a
-          href="/resume.pdf"
+          href="/ResSLF4.pdf"
           download
           className="resume-btn"
         >
@@ -18,7 +18,7 @@ function Resume() {
 
       <div className="resume-viewer">
         <iframe
-          src="/resume.pdf"
+          src="/ResSLF4.pdf"
           title="Resume PDF"
           width="100%"
           height="600px"
